@@ -10,10 +10,18 @@
   left: 0;
   width: 100%; 
   z-index: 1000;
-  background-color: #fff;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+
 }
 
 .navbar-nav li {
-    margin-right: 50px;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+.navb_s {
+    /* background-color:  #FFD700; */
+    background-color:  #aae6aa;
+    border-radius: 30px;
+    height: 90px;
 }

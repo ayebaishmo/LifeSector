@@ -5,7 +5,7 @@ function Header() {
   return (
     <header className="header">
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
-        <div className="container-fluid">
+        <div className="container-fluid navb_s">
           <a className="navbar-brand" href="#">
             <img className='logo' src={LifeSector} alt="Life sector Icon" />
           </a>
