@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import './FadeCarousel.css';
 
 type Slide = {
   image: string;
@@ -13,14 +14,21 @@ type Slide = {
 type FadeCarouselProps = {
   slides: Slide[];
   id?: string;
-  height?: string; // e.g., "80vh" or "600px"
+  height?: string;
 };
 
 const FadeCarousel: React.FC<FadeCarouselProps> = ({
   slides,
   id = "fadeCarousel",
-  height = "170vh",
+  height = "130vh",
 }) => {
+  const [animate, setAnimate] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setAnimate(true), 100);
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <div
       id={id}
@@ -28,15 +36,15 @@ const FadeCarousel: React.FC<FadeCarouselProps> = ({
       data-bs-ride="carousel"
     >
       <div className="carousel-inner">
-
         {slides.map((slide, index) => (
           <div
             key={index}
             className={`carousel-item ${index === 0 ? "active" : ""}`}
           >
-            {/* Background Image with overlay */}
             <div
-              className="d-flex align-items-center text-white position-relative"
+              className={`d-flex align-items-center position-relative slide-container ${
+                index === 0 && animate ? "animate" : ""
+              }`}
               style={{
                 height: height,
                 backgroundImage: `url(${slide.image})`,
@@ -44,37 +52,21 @@ const FadeCarousel: React.FC<FadeCarouselProps> = ({
                 backgroundPosition: "center",
               }}
             >
-              {/* Overlay */}
-              <div
-                style={{
-                  position: "absolute",
-                  top: 0,
-                  left: 0,
-                  width: "100%",
-                  height: "100%",
-                  backgroundColor: "rgba(0,0,0,0.4)",
-                  zIndex: 1,
-                }}
-              />
+              {/* Overlay behind text */}
+              <div className="overlay" />
 
-              {/* Text content */}
-              <div className="container" style={{ position: "relative", zIndex: 2 }}>
+              {/* Text content above overlay */}
+              <div className="container text-content">
                 <div className="col-lg-6">
                   <h1 className="fw-bold display-4">{slide.title}</h1>
                   <p className="lead mt-3">{slide.subtitle}</p>
 
                   <div className="mt-4 d-flex gap-3">
-                    <a
-                      href={slide.buttonPrimaryLink}
-                      className="btn btn-light px-4"
-                    >
+                    <a href={slide.buttonPrimaryLink} className="btn btn-light px-4">
                       {slide.buttonPrimaryText}
                     </a>
 
-                    <a
-                      href={slide.buttonSecondaryLink}
-                      className="btn btn-outline-light px-4"
-                    >
+                    <a href={slide.buttonSecondaryLink} className="btn btn-outline-light px-4">
                       {slide.buttonSecondaryText}
                     </a>
                   </div>
@@ -83,27 +75,7 @@ const FadeCarousel: React.FC<FadeCarouselProps> = ({
             </div>
           </div>
         ))}
-
       </div>
-
-      {/* Carousel Controls */}
-      <button
-        className="carousel-control-prev"
-        type="button"
-        data-bs-target={`#${id}`}
-        data-bs-slide="prev"
-      >
-        <span className="carousel-control-prev-icon" />
-      </button>
-
-      <button
-        className="carousel-control-next"
-        type="button"
-        data-bs-target={`#${id}`}
-        data-bs-slide="next"
-      >
-        <span className="carousel-control-next-icon" />
-      </button>
     </div>
   );
 };

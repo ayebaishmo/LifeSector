@@ -1,27 +1,79 @@
-/* header.css */
 .logo {
   width: 60px;
-  height: 60px; 
+  height: 60px;
 }
 
+/* Initial state for animation */
 .header {
   position: fixed;
-  top: 0;
+  top: -100px; /* start above the viewport */
   left: 0;
-  width: 100%; 
+  right: 0;
   z-index: 1000;
-  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  box-shadow: none;
+  transition: top 1.9s ease, background-color 1.9s ease, box-shadow 1.9s ease;
+  opacity: 0;
+}
 
+/* When loaded, slide down */
+.header.loaded {
+  top: 20px;
+  opacity: 1;
+}
+
+.navbar {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
 }
 
 .navbar-nav li {
-    margin-right: 20px;
-    font-weight: bold;
+  margin-right: 20px;
+  font-weight: bold;
 }
 
 .navb_s {
-    /* background-color:  #FFD700; */
-    background-color:  #aae6aa;
-    border-radius: 30px;
-    height: 90px;
+  background-color: rgba(170, 230, 170, 0.3); 
+  border-radius: 30px;
+  height: 90px;
+  transition: background-color 0.5s ease, box-shadow 0.5s ease;
+}
+
+.header.scrolled .navb_s {
+  background-color: rgba(255, 255, 255, 0.95); 
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.nav-link {
+  color: white; 
+  transition: color 0.5s ease;
+}
+
+.header.scrolled .nav-link {
+  color: black; 
+}
+
+
+/* Mobile navbar background */
+@media (max-width: 991px) {
+  .navb_s {
+    background-color: white !important;
+    border-radius: 10px;
+    height: auto;
+    padding: 10px 20px;
+  }
+
+  .navbar-collapse {
+    background-color: white; 
+  }
+
+  .navbar-collapse .nav-link {
+    color: black !important;
+    margin-bottom: 10px;
+  }
+
+  /* Optional: make hamburger icon visible on white */
+  .navbar-light .navbar-toggler-icon {
+    filter: invert(0);
+  }
 }
