@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from "react";
 import './FadeCarousel.css';
 
 type Slide = {
@@ -22,12 +21,6 @@ const FadeCarousel: React.FC<FadeCarouselProps> = ({
   id = "fadeCarousel",
   height = "130vh",
 }) => {
-  const [animate, setAnimate] = useState(false);
-
-  useEffect(() => {
-    const timer = setTimeout(() => setAnimate(true), 100);
-    return () => clearTimeout(timer);
-  }, []);
 
   return (
     <div
@@ -42,9 +35,7 @@ const FadeCarousel: React.FC<FadeCarouselProps> = ({
             className={`carousel-item ${index === 0 ? "active" : ""}`}
           >
             <div
-              className={`d-flex align-items-center position-relative slide-container ${
-                index === 0 && animate ? "animate" : ""
-              }`}
+              className= "d-flex align-items-center position-relative slide-container"
               style={{
                 height: height,
                 backgroundImage: `url(${slide.image})`,

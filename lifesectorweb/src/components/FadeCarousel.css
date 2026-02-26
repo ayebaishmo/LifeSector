@@ -39,7 +39,7 @@
 
 /* Active slide animations */
 .slide-container.animate {
-  transform: scale(1); /* zoom to original size */
+  transform: scale(1); 
   opacity: 1;
 }
 
@@ -50,7 +50,18 @@
   opacity: 1;
 }
 
-/* Optional: stagger buttons */
 .slide-container.animate .text-content .btn {
   transition-delay: 0.3s;
+}
+
+.carousel-item.active .slide-container {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.carousel-item.active .text-content h1,
+.carousel-item.active .text-content p,
+.carousel-item.active .text-content .btn {
+  transform: translateY(0);
+  opacity: 1;
 }

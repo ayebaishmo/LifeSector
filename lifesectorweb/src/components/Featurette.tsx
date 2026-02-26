@@ -6,6 +6,7 @@ type FeaturetteProps = {
   width?: number;
   height?: number;
   className?: string;
+  borderRadius?: string | number;
 };
 
 const Featurette: React.FC<FeaturetteProps> = ({
@@ -14,16 +15,20 @@ const Featurette: React.FC<FeaturetteProps> = ({
   width = 500,
   height = 500,
   className = "",
+  borderRadius = 0
+
 }) => {
   return (
     <div className={`col-md-5 ${className}`}>
       <img
         src={image}
         alt={altText}
-        width={width}
-        height={height}
         className="featurette-image img-fluid mx-auto"
-        style={{ objectFit: "cover" }}
+        style={{ objectFit: "cover",
+           borderRadius: borderRadius,
+            width:width,
+            height:height
+        }}
       />
     </div>
   );
