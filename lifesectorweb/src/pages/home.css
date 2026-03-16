@@ -42,3 +42,13 @@
     height: 50px;
     width: 50px;
 }
+
+.who-weare {
+    display: flex;
+    gap: 10px;
+}
+
+.who-beg {
+    padding: 30px;
+    background-color: bisque;
+}

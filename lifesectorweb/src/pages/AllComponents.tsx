@@ -3,10 +3,10 @@ import Footer  from '../base/footer'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import FadeCarousel from '../components/FadeCarousel';
-import logo12 from './assets/IMG_1239.jpg'
-import logo13 from './assets/IMG_4678.jpg'
-import Pastor from './assets/Pr Don Zabbu.jpg'
-import Vision from './assets/vision.jpg'
+import logo12 from '../assets/IMG_1239.jpg'
+import logo13 from '../assets/IMG_4678.jpg'
+import Pastor from '../assets/Pr Don Zabbu.jpg'
+import Vision from '../assets/vision.jpg'
 import Featurette from '../components/Featurette'
 import Card from '../components/Card'
 import TextCard from '../components/TextCard';

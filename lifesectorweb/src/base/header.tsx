@@ -46,7 +46,7 @@ function Header() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item"><a className="nav-link" href="/">About us</a></li>
-              <li className="nav-item"><a className="nav-link" href="#">Ministries</a></li>
+              <li className="nav-item"><a className="nav-link" href="/ministries">Ministries</a></li>
               <li className="nav-item"><a className="nav-link" href="#">Our Services</a></li>
               <li className="nav-item"><a className="nav-link" href="#">Special Service</a></li>
               <li className="nav-item"><a className="nav-link" href="#">Contact Us</a></li>

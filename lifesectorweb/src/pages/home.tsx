@@ -5,9 +5,12 @@ import Header from "../base/header";
 import FadeCarousel from "../components/FadeCarousel";
 import Featurette from "../components/Featurette";
 import Footer from "../base/footer";
+import Card from "../components/Card";
+
 
 import logo12 from '../assets/IMG_1328.jpg';
 import logo13 from '../assets/IMG_4678.jpg';
+import Vision from '../assets/vision.jpg';
 
 import Papa from '../assets/Pr Don Zabbu.jpg';
 
@@ -77,7 +80,28 @@ function Home() {
             </div>
           </div>
         </div>
+      </div>
+      <div className='who-beg'>
+        <h2>Who we are</h2>
 
+        <div className='who-weare'>
+          <Card
+            image={Vision}
+            title="Mission"
+            text="Achieving greatness in Christ"
+          />
+          <Card
+            image={Vision}
+            title="Vision"
+            text="Influencing God's people to their God given purposes"
+          />
+
+          <Card
+            image={Vision}
+            title="Core Values"
+            text="Excellency, Generosity"
+          />
+        </div>
       </div>
       <Footer />
 
