@@ -47,9 +47,8 @@ function Header() {
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item"><a className="nav-link" href="/">About us</a></li>
               <li className="nav-item"><a className="nav-link" href="/ministries">Ministries</a></li>
-              <li className="nav-item"><a className="nav-link" href="#">Our Services</a></li>
-              <li className="nav-item"><a className="nav-link" href="#">Special Service</a></li>
-              <li className="nav-item"><a className="nav-link" href="#">Contact Us</a></li>
+              <li className="nav-item"><a className="nav-link" href="/services">Our Services</a></li>
+              <li className="nav-item"><a className="nav-link" href="/contact_us">Contact Us</a></li>
               <li className="nav-item"><a className="nav-link" href="#">Gallery</a></li>
               <li className="nav-item"><a className="nav-link" href="#">The Ministry Team</a></li>
               <li className="nav-item"><a className="nav-link" href="#">Podcasts</a></li>
