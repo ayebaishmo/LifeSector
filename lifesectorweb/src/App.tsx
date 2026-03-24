@@ -6,18 +6,24 @@ import Ministry from './pages/ministries'
 import AllComponents from './pages/AllComponents'
 import Services from './pages/our_services'
 import Contact from './pages/contact_us'
+import Gallery from './pages/gallery'
+
 
 
 function App() {
 
   return (
     <div>
+      <div>
+        
+      </div>
       <Routes>
         <Route path='/' element={<Home />}></Route>
         <Route path='/ministries' element={<Ministry />}></Route>
         <Route path='/all' element={<AllComponents />}></Route>
         <Route path='/services' element={<Services />}></Route>
         <Route path='/contact_us' element={<Contact />}></Route>
+        <Route path='/gallery' element={<Gallery />}></Route>
       </Routes>
     </div>
     
