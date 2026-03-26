@@ -1,15 +1,15 @@
-.image-wrapper {
+.image-wrappergalley {
   position: relative;
 }
 
-.gallery-image {
+.gallery-imagegalley {
   width: 100%;
   height: 500px;
   object-fit: cover;
   display: block;
 }
 
-.image-overlay {
+.image-overlaygalley {
   position: absolute;
   top: 0;
   left: 0;

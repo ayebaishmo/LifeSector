@@ -50,9 +50,9 @@ function Gallery() {
                 <Header />
             </div>
             <div>
-                <div className="image-wrapper">
-                    <img src={gall} alt="" className="gallery-image" />
-                    <div className="image-overlay"></div>
+                <div className="image-wrappergalley">
+                    <img src={gall} alt="" className="gallery-imagegalley" />
+                    <div className="image-overlaygalley"></div>
                 </div>
             </div>
             <div>

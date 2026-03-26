@@ -49,8 +49,8 @@ function Header() {
               <li className="nav-item"><a className="nav-link" href="/ministries">Ministries</a></li>
               <li className="nav-item"><a className="nav-link" href="/services">Our Services</a></li>
               <li className="nav-item"><a className="nav-link" href="/contact_us">Contact Us</a></li>
-              <li className="nav-item"><a className="nav-link" href="gallery">Gallery</a></li>
-              <li className="nav-item"><a className="nav-link" href="#">The Ministry Team</a></li>
+              <li className="nav-item"><a className="nav-link" href="/gallery">Gallery</a></li>
+              <li className="nav-item"><a className="nav-link" href="/ministryteam">The Ministry Team</a></li>
               <li className="nav-item"><a className="nav-link" href="#">Podcasts</a></li>
             </ul>
           </div>

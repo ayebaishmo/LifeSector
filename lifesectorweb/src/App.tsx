@@ -7,7 +7,7 @@ import AllComponents from './pages/AllComponents'
 import Services from './pages/our_services'
 import Contact from './pages/contact_us'
 import Gallery from './pages/gallery'
-
+import MinistryTeam from './pages/ministry_team'
 
 
 function App() {
@@ -24,6 +24,7 @@ function App() {
         <Route path='/services' element={<Services />}></Route>
         <Route path='/contact_us' element={<Contact />}></Route>
         <Route path='/gallery' element={<Gallery />}></Route>
+        <Route path='/ministryteam' element={<MinistryTeam />}></Route>
       </Routes>
     </div>
     
