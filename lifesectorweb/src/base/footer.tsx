@@ -10,7 +10,7 @@ function Header() {
           <div className="col-lg-4">
             <img className='logo2' src={logo} alt="Life sector Logo" />
             <p className="opacity-75">
-              Creating beautiful worship places for the serving Lord, Creating beautiful worship places for the serving Lord .
+              Creating beautiful worship places for the serving Lord. Serving God with to the best of our Knowledge
             </p>
             <div className="d-flex gap-2 mt-4">
 

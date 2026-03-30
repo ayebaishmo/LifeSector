@@ -33,7 +33,7 @@ function Contact() {
                     icon: <FaClock />,
                     title: "Open Hours",
                     lines: [
-                        "Monday – Friday: 8:00 AM - 6:00 PM",
+                        "Monday – Friday: 9:00 AM - 6:00 PM",
                         "Saturday: 9:00 AM - 4:00 PM",
                         "Sunday: 9:00 AM - 4:00 PM",
                     ],

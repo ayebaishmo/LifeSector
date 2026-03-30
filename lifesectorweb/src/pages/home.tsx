@@ -12,7 +12,7 @@ import logo12 from '../assets/IMG_1328.jpg';
 import logo13 from '../assets/IMG_4678.jpg';
 import Vision from '../assets/vision.jpg';
 
-import Papa from '../assets/Pr Don Zabbu.jpg';
+import Papa from '../assets/Papa2.jpeg';
 
 import Life from '../assets/life-insurance.png';
 import Sector from '../assets/industry.png';
@@ -51,7 +51,7 @@ function Home() {
           image={Papa}
           altText="Church worship moment"
           width={500}
-          height={500}
+          height={600}
           className="order-md-1 home_feat"
           borderRadius={26}
         />

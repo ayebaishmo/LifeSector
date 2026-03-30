@@ -153,6 +153,8 @@ const ContactForm: React.FC = () => {
               >
                 <option value="">Select a subject</option>
                 <option value="general">General Inquiry</option>
+                <option value="general">Testimony</option>
+                <option value="general">Baby Dedication</option>
                 <option value="prayer">Prayer Request</option>
                 <option value="partnership">Partnership</option>
                 <option value="support">Support</option>
